@@ -12,12 +12,12 @@
    CSS CUSTOM PROPERTIES + RESET
    ============================================================ */
 :root {
-  --navy:       #1B3A6B;
-  --navy-dark:  #122850;
-  --navy-light: #2A5298;
-  --gold:       #C9A84C;
-  --gold-light: #F0E2B0;
-  --gold-pale:  #FAF6E8;
+  --navy:       #0E7490;
+  --navy-dark:  #0A5A72;
+  --navy-light: #1AA3C4;
+  --gold:       #84CC16;
+  --gold-light: #D9F99D;
+  --gold-pale:  #F7FEE7;
   --white:      #FFFFFF;
   --gray-100:   #F1F3F5;
   --gray-200:   #E9ECEF;
@@ -693,7 +693,7 @@ body {
       <div class="header-org" id="header-org-el"></div>
       <div class="header-dept">Mock Life Safety Survey</div>
     </div>
-    <div class="header-badge">vX</div>
+    <div class="header-badge">FAS_v1</div>
   </div>
 </header>
 
@@ -710,14 +710,9 @@ body {
       <div class="select-wrapper">
         <select id="sel-community" class="form-select" onchange="onCommunityChange(this)">
           <option value="">Select a community...</option>
-          <option value="AV">Addolorata Villa</option>
-          <option value="FV">Franciscan Village</option>
-          <option value="MAV">Mount Alverna Village</option>
-          <option value="MV">Marian Village</option>
-          <option value="SJV">St. Joseph Village</option>
-          <option value="UP">University Place</option>
-          <option value="VMC">Village at Mercy Creek</option>
-          <option value="VVL">Village at Victory Lakes</option>
+          <option value="Astral at Auburn">Astral at Auburn</option>
+          <option value="Astral at Franklin">Astral at Franklin</option>
+          <option value="Woodlands at Canterfield">Woodlands at Canterfield</option>
         </select>
       </div>
     </div>
@@ -807,21 +802,16 @@ body {
    CONFIG
    ============================================================ */
 const CONFIG = {
-  orgName:           'Franciscan Ministries',
-  deptName:          'Plant Operations',
-  primaryColor:      '#1B3A6B',
-  accentColor:       '#C9A84C',
-  showCommunityAbbr: true,
+  orgName:           'Franciscan Advisory Services',
+  deptName:          'Life Safety Compliance',
+  primaryColor:      '#0E7490',
+  accentColor:       '#84CC16',
+  showCommunityAbbr: false,
   draftKey:          'fm_lsc_survey_draft',
   communities: {
-    'AV':  'Addolorata Villa',
-    'FV':  'Franciscan Village',
-    'MAV': 'Mount Alverna Village',
-    'MV':  'Marian Village',
-    'SJV': 'St. Joseph Village',
-    'UP':  'University Place',
-    'VVL': 'Village at Victory Lakes',
-    'VMC': 'Village at Mercy Creek'
+    'Astral at Auburn':         'Astral at Auburn',
+    'Astral at Franklin':       'Astral at Franklin',
+    'Woodlands at Canterfield': 'Woodlands at Canterfield'
   }
 };
 
