@@ -193,7 +193,7 @@ body {
 .form-input:focus, .form-select:focus {
   outline: none;
   border-color: var(--navy-light);
-  box-shadow: 0 0 0 3px rgba(27,58,107,0.12);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--navy) 15%, transparent);
 }
 .select-wrapper { position: relative; }
 .select-wrapper::after {
@@ -510,7 +510,7 @@ body {
   min-height: 72px;
   transition: border-color 0.15s;
 }
-.notes-field:focus { outline: none; border-color: var(--navy-light); box-shadow: 0 0 0 3px rgba(27,58,107,0.10); }
+.notes-field:focus { outline: none; border-color: var(--navy-light); box-shadow: 0 0 0 3px color-mix(in srgb, var(--navy) 12%, transparent); }
 
 #report-print { display: none; }
 
@@ -659,15 +659,17 @@ body {
 .print-watermark { display: none; }
 
 :root {
-  --navy: #0E7490;
-  --navy-dark: #0A5A72;
-  --navy-light: #1AA3C4;
-  --gold: #84CC16;
-  --gold-text: #3F6212;
-  --gold-light: #D9F99D;
-  --gold-pale: #F7FEE7;
-  --accent-btn-hover: #65A30D;
-  --day90: #1B3A6B;
+  --navy: #074975;
+  --navy-dark: #053656;
+  --navy-light: #0B6A9E;
+  --gold: #36C1CB;
+  --gold-text: #0B7A84;
+  --gold-light: #C9EEF1;
+  --gold-pale: #EEF9FA;
+  --header-org: #94C83E;
+  --accent-btn-bg: #94C83E;
+  --accent-btn-fg: #053656;
+  --accent-btn-hover: #7FB02F;
 }
 </style>
 <style id="print-page-style"></style>
